@@ -16,7 +16,7 @@ class TestExample(unittest.TestCase):
 
     def test_element_presence(self):
         driver = self.driver
-        # Soft Assertion (Is actually Verify, And the test will continue even if the step fails)
+        # ///Soft Assertion (Is actually Verify, And the test will continue even if the step fails)
         try:
             element = driver.find_element(By.ID,"nonexistent-element")
             self.assertIsNotNone(element, "Element should be present")
